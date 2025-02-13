@@ -15,7 +15,7 @@ rollBtn.addEventListener("click", ()=>{
 function switchImage(dice, imgId)
 {
     let img = document.getElementById(imgId);
-    img.style.height= "160px";
+    img.style.width= "160px";
     img.style.margin= "2rem 0";
     switch (dice) 
     {

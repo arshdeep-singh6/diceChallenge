@@ -1,0 +1,39 @@
+# Dice Challenge
+
+This is a simple dice game to help make quick decisions between two people. The game is built using HTML, CSS, and JavaScript.
+
+## How to Play
+
+1. Open the `index.html` file in your web browser.
+2. Each player clicks the "Roll Dice" button.
+3. The player with the higher dice roll wins the round.
+4. If both players roll the same number, it's a draw.
+
+## Files
+
+- `index.html`: The main HTML file that contains the structure of the game.
+- `styles.css`: The CSS file that styles the game.
+- `script.js`: The JavaScript file that contains the game logic.
+
+## HTML Structure
+
+The HTML file contains the following elements:
+- Two dice images to display the dice rolls.
+- A button to roll the dice.
+- A message area to display the result of the game.
+
+## CSS Styling
+
+The CSS file styles the game elements, including:
+- Centering the game on the page.
+- Styling the dice images.
+- Styling the button and message area.
+
+## JavaScript Logic
+
+The JavaScript file contains the game logic, including:
+- Generating random dice rolls for each player.
+- Updating the dice images based on the rolls.
+- Displaying the result of the game.
+
+## Example

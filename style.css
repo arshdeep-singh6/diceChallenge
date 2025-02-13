@@ -13,31 +13,50 @@ header{
     text-align: center;
 }
 .container{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-areas: "h3 h3"
+    "players players"
+    "button button"
+    "result result";
     align-items: center;
     justify-content: center;
     margin-top: 1rem;
     padding: 2rem;
 }
+
+h3{
+    grid-area: h3;
+    text-align: center;
+}
+
 .players{
+    width: 95vw;
     display: flex;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-area: players;
 }
 
 .dice{
     padding: 2rem;
+    width: 45vw;
 }
 
 footer{
+    margin: 1rem;
     text-align: center;
 }
 
 img{
-    height: 300px;
+    width: 200px;
+    height: auto;
 }
 
 .roll{
+    margin: auto;
+    grid-area: button;
     background-color: rgb(217, 48, 48);
     box-sizing: content-box;
     width:5rem;
@@ -63,6 +82,26 @@ img{
 
 .result{
     font-family: sans-serif;
+    grid-area: result;
     font-size: 1.5rem;
-    margin-top: 1rem;
+    margin: 1rem auto;
+}
+
+
+
+
+
+@media screen and (max-width:600px) {
+    img{
+        width: 150px;
+    }
+
+    .players
+    {
+        max-width: 100%;
+    }
+
+    .players div{
+        width:200px;
+    }
 }
